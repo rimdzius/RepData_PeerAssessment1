@@ -60,7 +60,7 @@ Histogram <- ggplot(daily_steps, aes(x=steps)) +
 Histogram
 ```
 
-![](Figs/Histogram-1.png)<!-- -->
+![plot of chunk Histogram](Figs/Histogram-1.png)
 
 The mean of the total number of steps taken per day is **10766.19**.  
 The median of the total number of steps taken per day is **10765**.    
@@ -83,7 +83,7 @@ ggplot(interval_steps,aes(x=interval, y=steps)) +
            title = "Average Number of Steps Taken Across All Days")
 ```
 
-![](Figs/Time-Series-1.png)<!-- -->
+![plot of chunk Time-Series](Figs/Time-Series-1.png)
 
 The 5-minute interval that averages the most number of steps across all days is 
 **835** with 
@@ -184,7 +184,7 @@ Imputed_Histogram <- ggplot(imputed_daily_steps, aes(x=steps)) +
 grid.arrange(Histogram, Imputed_Histogram, nrow = 1)
 ```
 
-![](Figs/Imputed_Histogram-1.png)<!-- -->
+![plot of chunk Imputed_Histogram](Figs/Imputed_Histogram-1.png)
 
 The mean of the total number of steps taken per day of the imputed data is 
 **9503.87**. The original non-imputed 
@@ -221,7 +221,7 @@ ggplot(weekday_data,aes(x=interval, y=steps)) +
            title = "Average Number of Steps Taken Across All Days")
 ```
 
-![](Figs/Weekday_Time_Series-1.png)<!-- -->
+![plot of chunk Weekday_Time_Series](Figs/Weekday_Time_Series-1.png)
 
 There appears to be a higher peak during the weekday mornings, but the weekends 
 appear to have a bit higher sustained peaks throughout the day. The weekday also 
